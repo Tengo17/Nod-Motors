@@ -10,7 +10,7 @@ body {
 	max-width: 1084px;
 	margin: 0 auto;
 	overflow-x: hidden;
-	height: 100%;
+	height: calc(130vh - 100px);
 	
 	
 }
@@ -94,17 +94,17 @@ header{
 	}
 .tesla-h1 {
 	position: relative;
-	top: 100px;
+	top: 80px;
 	left: 100px;
 	font-size: 30px;
 
 }
 .tesla-p{
 	position: relative;
-	top: 70px;
+	top: 50px;
 	left: 102px;
 	font-size: 14px;
-	color: #FFF;
+	color: #95A5A6;
 }
 .hero-content {
 	height: calc(100vh - 60px);
@@ -113,36 +113,6 @@ header{
    align-items: center;
 justify-content: center; 
 }
-
-.hero::before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #e8f0f3;
-	z-index: -2;
-	height: 768px;
-	}
-
-.hero::after {
-	content:'nodmotors';
-	position: absolute;
-	top: 200px;
-	display:block;
-	width: 1100px;
-    height: 302px;
-    z-index: -1;
-    font-size: 250px;
-    font-family: caps;
-    color: #FFF;
-    text-shadow: 0 3px 6px 
-     rgba(24, 24, 24, 0.06);
-    opacity: 0.3;
-
-}
 .specifications {
 	
 	width: 600px;
@@ -150,6 +120,7 @@ justify-content: center;
 	display: flex;
 	font-family: caps;
 	position: relative;
+	bottom: 30px;
 	left:70px;
 	justify-content: space-between;
 
@@ -167,93 +138,199 @@ justify-content: center;
 }
 .arrowdown {
 	position: relative;
-	bottom: 15px;
+	bottom: 0px;
 	right: 50px;
 	cursor: pointer;
 	padding-left: 50px;
 
 }
-#cars {
+.history {
+	font-size: 12px;
+	color: #95A5A6;
+
+}
+.history1{
+		font-size: 12px;
+	color: #95A5A6;
+
+}
+.performance {
+	position: relative;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.container {
 	padding-top: 100px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
+.texts {
+	
+	position: relative;
+	width: 46%;
+	display: flex;
+	justify-content: space-between;
+}
+.sometext {
+display: flex;
+justify-content: space-between;
+position: relative;
+top: 0px;
+width:75%;
+}
+.images {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+
+}
+.image2 {
+	padding-left: 20px;
+}
+.images::before {
+	content: '';
+	position: absolute;
+	background-color: #181818;
+	opacity: 0.6;
+	width: 440px;
+	height: 429px;
+	border-radius: 10px;
+}
+.sometext::after {
+	content: url('../images/Txt1.png');
+	position: absolute;
+	left: 100px;
+	z-index: 5;
+	top: 140px;
+	
+}
+.colors {
+    display:flex; 
+    justify-content: center;
+position: relative;
+bottom: 70px;
+left: 55px;
+    
+  }
+.white, .black, .red {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    margin: 0 4px; 
+    border: 1px solid #95A5A6;
+
+}
+.white {
+	background-color: white;
+}
+.black {
+	background-color: black;
+}
+.red {
+	background-color: #AA071E;
+
+}
+.tesla-h1::after {
+content: url('../images/Pointer.png');
+position: relative;
+z-index: 5;
+top: 310px;
+left: 80px;
+}
+
+.tesla-h1::before {
+	content: url('../images/Pointer.png');
+	z-index: 5;
+	position: relative;
+	top: 205px;
+	left: 545px;
+}
+.tesla-p::before {
+	content: url('../images/Pointer.png');
+	position: relative;
+	z-index: 5;
+	top: 190px;
+	left: 735px;
+}
+.tesla-p::after{
+	content: url('../images/InfoPadge.png');
+	z-index: 5;
+	position: absolute;
+	top: 310px;
+	left: 330px;
+}
+
+.performance1 {
+	font-size: 30px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+.raiting {
+	padding-top: 15px;
+	width: 624px;
+	height: 399px;
+	background-color: #E8F0F3;
+	border-radius: 10px;
+
+}
+.history12 {
+	width: 624px;
+	height: 107px;
+	font-size: 14px;
+	color: #95A5A6;
+
+}
+.raiting::before {
+	content: url('../images/Txt.png');
+	position: relative;
+	left: 150px;
+	top: 60px;
+}
+.mappic	{
+	position: relative;
+	bottom: 550px;
+	left: 640px;
+}
+.history122 {
+	width: 440px;
+	height: 107px;
+	font-size: 14px;
+	color: #95A5A6;
+	position: relative;
+	left: 645px;
+	bottom: 550px;
+
+}
+.performance12 {
+		font-size: 30px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	position: relative;
+	left: 645px;
+	bottom: 550px;
+}
+.imglist {
+	margin: 0 auto;
+	letter-spacing: 21px;
+	position: relative;
+	bottom: 480px;
+}
 .cars-h1 {
+	position: absolute;
+	left: 0;
+	top: 280px;
 	font-size: 32px;
 	font-weight: bold;
 }
 .cars-p {
+	position: absolute;
+	left: 0;
+	top: 320px;
 	font-size: 10px;
 	font-weight: normal;
 	color: #95A5A6;
-}
-form {
-	display: flex;
-	padding-top: 27px;
-	width: 100%;
-	justify-content: space-between;
-
-	
-}
-.selector {
-	text-align-last: center;
-   -moz-text-align-last: center;
-   -webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	 -o-appearance: none;
-	appearance: none;
-	height: 40px;	
-	width: 164px;
-	border: 1px solid #FFF;
-	border-radius: 30px;
-	box-shadow: 0 3px 6px 0 rgba(24, 24, 24, 0.06);
-	display: flex;
-	font-family: caps;
-	font-size: 14px;
-
-}
-
-.selectors {
-		display: flex;
-	padding-top: 27px;
-	width: 60%;
-	justify-content: space-between;
-
-}
-
-.selector:hover {
-	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
-	color: #181818;
-	transition: color 300ms ease;
-}
-
-.amount {
-	position: relative;
-	right: -350px;
-	width: 72px;
- 	height: 40px;
- 	border: 1px solid #FFF;
-	border-radius: 30px;
-	box-shadow: 0 3px 6px 0 rgba(24, 24, 24, 0.06);
-	align-content: flex-end;
-	font-family: caps;
-	font-size: 14px;
-	color: #181818;
-		text-align-last: center;
-   -moz-text-align-last: center;
-   -webkit-appearance: none;
-
-
-
-	
-
-}
-
-.amount:hover {
-  	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
-	color: #181818;
-	transition: color 300ms ease;
-  	
 }
 .car-list {
 	width: 100%;
@@ -280,12 +357,15 @@ form {
 }
 
 .colors {
+	position: relative;
+	left: 0;
+	bottom: 45px;
     display:flex; 
     justify-content: center;
     margin-top: 20px;
     
   }
-.white, .black, .red, .orange, .silver, .olive, .gold, .blue {
+  .white, .black, .red, .orange, .silver, .olive {
     width: 12px;
     height: 12px;
     border-radius: 20px;
@@ -293,7 +373,7 @@ form {
     border: 1px solid #95A5A6;
 
 }
-.white {
+  .white {
 	background-color: white;
 }
 .black {
@@ -313,30 +393,32 @@ form {
 .olive {
 	background-color: #6AB04C;
 }
-.gold {
-	background-color: #D1BB3F;
-}
-.blue {
-	background-color: #2F6AA2;
-}
+
 h3 {
+	position: relative;
+	bottom: 30px;
 	font-size: 20px;
 	font-weight: bold;
-	padding-top: 15px;
 }
 .specs {
+	position: relative;
+	bottom: 30px;
 	font-size: 10px;
 	font-weight: normal;
 	color: #707070;
 	word-spacing: 15px;
 }
+.car-list {
+	position: relative;
+	top: 250px;
+
+}
 footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
-	width: 100%;
-	height: 2.5em;
+position: relative;
+bottom: -450px;
 }
 .nodmotors {
 	color: #95A5A6;
@@ -356,34 +438,3 @@ color: #95A5A6;
 	width: 100px;
 	height: 50px;
 }
-
-.tesla-h1::after {
-content: url('../images/Pointer.png');
-position: relative;
-z-index: 5;
-top: 285px;
-left: 80px;
-}
-
-.tesla-h1::before {
-	content: url('../images/Pointer.png');
-	z-index: 5;
-	position: relative;
-	top: 180px;
-	left: 545px;
-}
-.tesla-p::before {
-	content: url('../images/Pointer.png');
-	position: relative;
-	z-index: 5;
-	top: 175px;
-	left: 735px;
-}
-.tesla-p::after{
-	content: url('../images/InfoPadge.png');
-	z-index: 5;
-	position: absolute;
-	top: 280px;
-	left: 330px;
-}
-
