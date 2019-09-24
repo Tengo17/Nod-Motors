@@ -30,6 +30,7 @@ header{
 	align-items: center;
 	height: 80px;
 	position: relative;
+	z-index: 5;
 	
 
 }
@@ -69,6 +70,7 @@ height: 20px;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 20px;
+
 
 }
 .info-list:hover {
