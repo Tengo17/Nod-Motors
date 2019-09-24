@@ -1,0 +1,227 @@
+  
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style:none;
+		
+}
+body {
+	max-width: 1084px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+}
+html {
+	scroll-behavior: smooth;
+}
+@font-face {
+	font-family: caps;
+	src: url(../fonts/panton.ttf);
+}
+a,h1,h2,h3,p{
+	font-family: caps;
+	
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	position: relative;
+	
+
+}
+.messageus {
+display: block;
+position: relative;
+right: 70px;
+bottom: 50px;
+width: 150px;
+height: 20px;
+}
+
+.header-list {
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.info-list {
+	padding-left: 18px;
+	font-size: 14px;
+	color: #181818;
+	font-family: caps;
+
+
+}
+.info-list-book {
+	border: 1px solid  #badc58;
+		font-size: 14px;
+	color: #181818;
+	font-family: caps;
+	width: 100px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20px;
+
+}
+.info-list:hover {
+		color: #6AB04C;
+	transition: color 300ms ease;
+}
+.info-list-book:hover {
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #FFF;
+}
+.aside {
+	width: 256px;
+	height: 586px;
+	background-color: #E8F0F3;
+	border-radius: 15px;
+	
+	}
+	.h2 {
+		padding-left: 20px;
+		padding-top: 30px;
+	}
+	.images {
+		position: relative;
+	z-index: 15;
+	margin-left: 92px;
+	margin-top: 62px;
+	height: 95px;
+	width: 20px;
+	}
+	.img {
+		padding-bottom: 20px;
+	}
+	.contact-info{
+		width: 150px;
+		height: 95px;
+		position: relative;
+		left: 65px;
+		bottom: 125px;
+
+	}
+
+	.p {
+		padding-bottom: 23px;
+	}
+	.content-box {
+		position: relative;
+		width: 100%;
+		height: 620px;
+	}
+	.content-box::before {
+		content: '';
+	position: absolute;
+	background-color: #fff;
+	width: 420px;
+	height: 168px;
+	border-radius: 10px;
+	z-index: 1;
+	top: 95px;
+	left: 40px;
+	}
+	iframe {
+		position: relative;
+		width: 808px;
+		height: 586px;
+		left: 280px;
+		bottom: 585px;
+		border-radius: 15px;
+		z-index: 0;
+	}
+	footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	bottom: 20px;
+	width: 100%;
+	height: 2.5em;
+}
+.nodmotors {
+	color: #95A5A6;
+	padding-left: 130px;
+
+}
+.telnum {
+	color: #95A5A6;
+	padding-right: 15px;
+}
+.mail{
+color: #95A5A6;
+
+}
+.contacts {
+	border: 1px solid red;
+	width: 100px;
+	height: 50px;
+}
+input {
+	width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	position: relative;
+	bottom: 30px;
+	right: 70px;
+
+}
+.name {
+	margin-bottom: 10px;
+}
+.subject {
+	margin-bottom: 10px;
+}
+.email {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.message {
+padding-bottom: 30px;
+}
+::placeholder {
+	padding-left: 15px;
+}
+.send {
+	width: 216px;
+	height: 30px;
+	border-radius: 12px;
+	border: 0;
+	position: relative;
+	right: 70px;
+	bottom: 30px;
+	color: white;
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+.booking-input.mystyle {
+	font-size: 16px;
+position: absolute;
+top: 320px;
+left: -40px;
+	width: 166px;
+	height: 57px;
+	display: flex;
+	text-align: center;
+}
+.image {
+	left: 15px;
+	top: 250px;
+	position: absolute;
+	width: 52px;
+	height: 52px;
+
+}
+
+

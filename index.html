@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -13,11 +12,12 @@
 	<nav>
 	<ul class="header-list">
 		<a href="#cars"><li class="info-list">Cars</li></a>
-		<a href="#!"><li class="info-list" >Terms and Conditions</li></a>
-		<a href="#!"><li class="info-list">Contact</li></a>
-		<a href="#!"><li class="info-list-book">Book</li></a>
+		<a href="termsandconditions.html"><li class="info-list" >Terms and Conditions</li></a>
+		<a href="contactpage.html"><li class="info-list">Contact</li></a>
+			<a href="#!"><button onclick="onof()" class="info-list-book">book</button></a>
 	</ul>
  	</nav>
+ 	
  </header>
 
 
@@ -28,22 +28,53 @@
 			<a href="carpage.html"><img class="hero-image" src="assets/images/TeslaPic.png"></a>
 			<div class="specifications">
 			<ul >
-				<li class="spec">Power:</li>
-				<li class="li-spec">302 hp</li>
+		<li>
+				 <p class="spec">Power:</p>
+				 <p class="li-spec">302 hp</p>
+				</li>
 			</ul>	
 			<ul>
-				<li class="spec">Top Speed:</li>
-				<li class="li-spec">200km/ph</li>
+				<li>
+				<p class="spec">Top Speed:</p>
+				<p class="li-spec">200km/ph</p>
+			 	</li>
 			</ul>	
 			<ul>
-				<li class="spec">Rechage:</li>	
-				<li class="li-spec">after 1000 km</li>
+				<li>
+				<p class="spec">Rechage:</p>	
+				<p class="li-spec">after 1000 km</p>
+				</li>
 			</ul>
 
 			</div>
 <a href="#cars"><img class="arrowdown" src="assets/images/ArrowDown.png"></a>			
 		</section>
 	</div>
+		<!-- booking-form -->
+	<div id="booking" style="display: none;">
+
+
+		<div class="booking-content" id="content" >
+				
+				<div class="booking-form">
+				<h1 id="booking-h1">Booking Form</h1>
+				<p class="booking-p">Includes Michelin Pilot Sport 4S tires, larger, more powerful brakes and lowered</p>
+				<img id="green_image" src="">
+			</div>
+
+			<form class="booking-input" id="input">
+			
+				<input type="text"  id="name" class="name" name="name" placeholder="Name">
+				<input type="text"  id="phone" class="phone" name="Phone" placeholder="Phone">
+				<input type="email" id="email" class="email" name="name" placeholder="Email">
+				<input id="text" cols="100" class="message" placeholder="message">
+				<button type="submit" class="send" onclick="hide()">Send</button>
+
+			</form>
+		</div>
+
+	</div>
+
 <section id="cars">
 	
 	<h1 class="cars-h1"> Avialable Cars</h1>
@@ -165,7 +196,7 @@
 </div>
 
 </footer>
-	
+	 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
 </html>

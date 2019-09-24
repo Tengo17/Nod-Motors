@@ -12,18 +12,41 @@
 	<nav>
 	<ul class="header-list">
 		<a href="#cars"><li class="info-list">Cars</li></a>
-		<a href="#!"><li class="info-list" >Terms and Conditions</li></a>
-		<a href="#!"><li class="info-list">Contact</li></a>
-		<a href="#!"><li class="info-list-book">Book</li></a>
+		<a href="termsandconditions.html"><li class="info-list" >Terms and Conditions</li></a>
+		<a href="contactpage.html"><li class="info-list">Contact</li></a>
+		<a href="#!"><button onclick="onof()" class="info-list-book">book</button></a>
 	</ul>
  	</nav>
 </header>
+	<!-- booking-form -->
+	<div id="booking" style="display: none;">
+
+
+		<div class="booking-content" id="content" >
+				
+				<div class="booking-form">
+				<h1 id="booking-h1">Booking Form</h1>
+				<p class="booking-p">Includes Michelin Pilot Sport 4S tires, larger, more powerful brakes and lowered</p>
+				<img id="green_image" src="">
+			</div>
+
+			<form class="booking-input" id="input">
+				<input type="text"  id="name" class="name" name="name" placeholder="Name">
+				<input type="text"  id="phone" class="phone" name="Phone" placeholder="Phone">
+				<input type="email" id="email" class="email" name="name" placeholder="Email">
+				<input id="text" cols="100" class="message" placeholder="message">
+				<button type="submit" class="send" onclick="hide()">Send</button>
+
+			</form>
+		</div>
+
+	</div>
  		<div class="hero">
 		<section class="hero-content">
 			<h1 class="tesla-h1">Tesla Model 3</h1>
 			<p class="tesla-p">Luxury Fast</p>
 			<a href="#!"><img class="hero-image" src="assets/images/TeslaPic.png"></a>
-			<div class="colors">
+			<div class="colors1">
 				<span class="white"></span>
 				<span class="black"></span>
 				<span class="red"></span>
@@ -43,10 +66,10 @@
 			</ul>
 
 			</div>
-<a href="#cars"><img class="arrowdown" src="assets/images/ArrowDown.png"></a>			
+<a href="#container"><img class="arrowdown" src="assets/images/ArrowDown.png"></a>			
 		</section>
 	</div>
-<div class="container">
+<div id="container" class="container">
 	<section class="content-box">
 	<ul>
 	<li class="texts">
@@ -136,6 +159,6 @@ Safety is the most important part of the overall Model 3 design. The metal struc
 </div>
 
 </footer>
-
+ <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

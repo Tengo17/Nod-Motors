@@ -1,0 +1,235 @@
+  
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style:none;
+		
+}
+body {
+	max-width: 1084px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	
+	
+	
+}
+html {
+	scroll-behavior: smooth;
+}
+@font-face {
+	font-family: caps;
+	src: url(../fonts/panton.ttf);
+}
+a,h1,h2,h3,p{
+	font-family: caps;
+	
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	position: relative;
+	
+
+}
+
+.header-list {
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.info-list {
+	padding-left: 18px;
+	font-size: 14px;
+	color: #181818;
+	font-family: caps;
+
+
+}
+.info-list-book {
+		background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #FFF;
+	border: 1px solid  #badc58;
+		font-size: 14px;
+	color: black;
+	font-family: caps;
+	width: 100px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20px;
+
+}
+.info-list:hover {
+		color: #6AB04C;
+	transition: color 300ms ease;
+}
+.info-list-book:hover {
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #FFF;
+}
+h1 {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+p {
+margin: 0 auto;
+	width: 716px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	color: #95A5A6;
+	display: flex;
+	justify-content: space-around;
+}
+footer {
+	padding-top: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 2.5em;
+}
+.nodmotors {
+	color: #95A5A6;
+	padding-left: 130px;
+
+}
+.telnum {
+	color: #95A5A6;
+	padding-right: 15px;
+}
+.mail{
+color: #95A5A6;
+
+}
+.contacts {
+	border: 1px solid red;
+	width: 100px;
+	height: 50px;
+}
+/*booking-form*/
+.name {
+	background-color: #E8F0F3;
+	width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.phone {
+	background-color: #E8F0F3;
+		width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.email {
+	background-color: #E8F0F3;
+	width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.message {
+	background-color: #E8F0F3;
+		width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	padding-bottom: 30px;
+
+}
+.send {
+	width: 216px;
+	height: 30px;
+	margin-top: 15px;
+	border-radius: 15px;
+	border: 0;
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+}
+.booking-content {
+position: fixed;
+	bottom: 400px; 
+margin: 0 auto;
+z-index: 2;
+
+}
+.booking-content::before {
+	content: '';
+	position: absolute;
+	width:1566px;
+	height: 180vh;
+	left: -220px;
+	top: -340px;
+	z-index: 0;
+	background-color: white;
+
+	opacity: 0.8;
+}
+
+.booking-h1 {
+
+padding-left: 80px;
+	font-size: 30px;
+	
+
+}
+.booking-p{
+	width: 280px;
+	height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #95A5A6;
+	display: flex;
+	text-align: center;
+}
+.booking-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+left: 450px;
+bottom: 100px; 
+}
+
+.booking-input {
+	display: flex;
+	position: absolute;
+	top: -100px;
+	left: 485px;
+	align-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 0;
+
+}
+
+
+.booking-input.mystyle {
+	font-size: 16px;
+	margin-top: 150px;
+	margin-left: 25px;
+	width: 166px;
+	height: 57px;
+	display: flex;
+	text-align: center;
+}
+.image {
+	left: 115px;
+	top: 180px;
+	position: absolute;
+	width: 52px;
+	height: 52px;
+
+}

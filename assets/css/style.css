@@ -31,6 +31,7 @@ header{
 	align-items: center;
 	height: 80px;
 	position: relative;
+	z-index: 5;
 	
 
 }
@@ -52,6 +53,8 @@ header{
 
 }
 .info-list-book {
+		background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #FFF;
 	border: 1px solid  #badc58;
 		font-size: 14px;
 	color: #181818;
@@ -62,6 +65,7 @@ header{
 	text-align: center;
 	line-height: 40px;
 	border-radius: 20px;
+	z-index: 2;
 
 }
 .info-list:hover {
@@ -165,6 +169,7 @@ justify-content: center;
 	font-weight: bold;
 	color: black;
 }
+
 .arrowdown {
 	position: relative;
 	bottom: 15px;
@@ -175,6 +180,7 @@ justify-content: center;
 }
 #cars {
 	padding-top: 100px;
+
 }
 
 .cars-h1 {
@@ -360,14 +366,14 @@ color: #95A5A6;
 .tesla-h1::after {
 content: url('../images/Pointer.png');
 position: relative;
-z-index: 5;
+z-index: 1;
 top: 285px;
 left: 80px;
 }
 
 .tesla-h1::before {
 	content: url('../images/Pointer.png');
-	z-index: 5;
+	z-index: 1;
 	position: relative;
 	top: 180px;
 	left: 545px;
@@ -375,15 +381,132 @@ left: 80px;
 .tesla-p::before {
 	content: url('../images/Pointer.png');
 	position: relative;
-	z-index: 5;
+	z-index: 1;
 	top: 175px;
 	left: 735px;
 }
 .tesla-p::after{
 	content: url('../images/InfoPadge.png');
-	z-index: 5;
+	z-index: 1;
 	position: absolute;
 	top: 280px;
 	left: 330px;
 }
+/*booking-form*/
+.name {
+	background-color: #E8F0F3;
+	width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.phone {
+	background-color: #E8F0F3;
+		width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.email {
+	background-color: #E8F0F3;
+	width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	margin-bottom: 15px;
+}
+.message {
+	background-color: #E8F0F3;
+		width: 216px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	padding-bottom: 30px;
 
+}
+.send {
+	width: 216px;
+	height: 30px;
+	margin-top: 15px;
+	border-radius: 15px;
+	border: 0;
+	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+}
+.booking-content {
+position: fixed;
+	bottom: 400px; 
+margin: 0 auto;
+z-index: 2;
+
+}
+.booking-content::before {
+	content: '';
+	position: absolute;
+	width:1566px;
+	height: 180vh;
+	left: -220px;
+	top: -340px;
+	z-index: 0;
+	background-color: white;
+
+	opacity: 0.8;
+}
+
+.booking-h1 {
+
+padding-left: 80px;
+	font-size: 30px;
+	
+
+}
+.booking-p{
+	width: 280px;
+	height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #95A5A6;
+	display: flex;
+	text-align: center;
+}
+.booking-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+left: 450px;
+bottom: 100px; 
+}
+
+.booking-input {
+	display: flex;
+	position: absolute;
+	top: -100px;
+	left: 485px;
+	align-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 2;
+
+}
+
+
+.booking-input.mystyle {
+	font-size: 16px;
+	margin-top: 150px;
+	margin-left: 25px;
+	width: 166px;
+	height: 57px;
+	display: flex;
+	text-align: center;
+}
+.image {
+	left: 115px;
+	top: 160px;
+	position: absolute;
+	width: 52px;
+	height: 52px;
+
+}
