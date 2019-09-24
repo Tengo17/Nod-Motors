@@ -64,6 +64,7 @@ header{
 	text-align: center;
 	line-height: 40px;
 	border-radius: 20px;
+	z-index: 2;
 
 }
 .info-list:hover {
