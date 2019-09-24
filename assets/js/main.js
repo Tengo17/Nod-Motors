@@ -5,7 +5,10 @@ function hide(){
   document.getElementById("input").classList.toggle("mystyle");
     document.getElementById("green_image").classList.toggle("image")
 }
-
+// function change();
+// {
+//     document.getElementById("button").value="X";
+// }
 
 function onof() {
   var x = document.getElementById("booking");
