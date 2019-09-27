@@ -527,7 +527,7 @@ bottom: 100px;
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
 
 	header {
 		width: 300px;
@@ -799,7 +799,7 @@ left: 115px;
   display: inline-block;
   cursor: pointer;
   position: relative;
-  left: 80px;
+  left: 60px;
 width: 44px;
 height: 42px;
 border-radius: 5px;
