@@ -60,6 +60,8 @@ height: 20px;
 
 }
 .info-list-book {
+		background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+	color: #FFF;
 	border: 1px solid  #badc58;
 		font-size: 14px;
 	color: #181818;
@@ -70,7 +72,7 @@ height: 20px;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 20px;
-
+	z-index: 2;
 
 }
 .info-list:hover {
@@ -234,4 +236,5 @@ aside::before {
 	width: 88px;
 	height: 88px;
 }
+
 

@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  
+    if ("IntersectionObserver" in window) {
+      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            let lazyImage = entry.target;
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.classList.remove("lazy");
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
+
+      lazyImages.forEach(function(lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+      });
+    } else {
+    }
+  });
+
+
 function hide(){
 
 	document.getElementById("input").innerHTML = "Thank you! Your message has been sent successfully.";	
@@ -5,10 +28,8 @@ function hide(){
   document.getElementById("input").classList.toggle("mystyle");
     document.getElementById("green_image").classList.toggle("image")
 }
-// function change();
-// {
-//     document.getElementById("button").value="X";
-// }
+
+
 
 function onof() {
   var x = document.getElementById("booking");
@@ -20,3 +41,18 @@ function onof() {
     document.getElementById("menu").classList.toggle("change");
   }
 }
+
+let burger = document. getElementById('menuToggle');
+let menu = document.
+getElementById('menu')
+burger.addEventListener('click',function(){
+  this.classList.toggle('active');
+  menu.classList.toggle('open');
+})
+
+
+
+
+
+
+

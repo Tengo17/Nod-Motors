@@ -3,13 +3,13 @@
 <head>
 	<title>Nod Motors</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
 <header>
 		 <a href="index.html"> <img class="logo" src="assets/images/Logo.png"></a>
-	<nav>
+	<nav id="menu">
 	<ul class="header-list">
 		<a href="#cars"><li class="info-list">Cars</li></a>
 		<a href="termsandconditions.html"><li class="info-list" >Terms and Conditions</li></a>
@@ -17,17 +17,29 @@
 			<a href="#!"><button id="button" onclick="onof()" class="info-list-book">book</button></a>
 	</ul>
  	</nav>
- 	
+
+ 	<div class="burger-menu" onclick="onof()" id="menu" >
+<div id="menuToggle">
+    <input type="checkbox"/>
+    <span id="span1"></span>
+    <span id="span2"></span>
+    <span id="span3"></span>
+</div>
+</div>
+
+ 
+
  </header>
 
 
  		<div class="hero">
 		<section class="hero-content">
-			<h1 class="tesla-h1">Tesla Model 3</h1>
+			<h1 class="tesla-h1" >Tesla Model 3</h1>
 			<p class="tesla-p">Luxury Fast</p>
+			
 			<a href="carpage.html"><img class="hero-image" src="assets/images/TeslaPic.png"></a>
 			<div class="specifications">
-			<ul >
+			
 		<li>
 				 <p class="spec">Power:</p>
 				 <p class="li-spec">302 hp</p>
@@ -113,8 +125,8 @@
 
 			<ul class="car-list">
 				<li>
-			<p class="list-p"><span class="left">From:</span> <span class="price">59 000 $</span></p>
-				<a href="carpage.html"><img src="assets/images/1.png"> </a>
+			<p class="list-p1"><span class="left">From:</span> <span class="price">59 000 $</span></p>
+				<a href="carpage.html"><img data-src="assets/images/1.png" class="lazy"> </a>
 				<div class="colors">
 					<span class="white"></span>
 					<span class="black"></span>
@@ -124,8 +136,8 @@
 				<p class="specs"> 302hp  200km/ph</p>
 			</li>
 			<li>
-					<p class="list-p"><span class="left">From:</span> <span class="price">79 000 $</span></p>
-					<a href="carpage.html"><img src="assets/images/2.png"></a>
+					<p class="list-p1"><span class="left">From:</span> <span class="price">79 000 $</span></p>
+					<a href="carpage.html"><img class="lazy" data-src="assets/images/2.png"></a>
 					<div class="colors">
 						<span class="white"></span>
 						<span class="black"></span>
@@ -134,8 +146,8 @@
 					<p class="specs"> 343hp   252km/ph</p>
 			</li> 
 			<li >
-					<p class="list-p"><span class="left">From:</span> <span class="price">103 000 $</span></p>
-					<a href="carpage.html"><img src="assets/images/3.png"></a>
+					<p class="list-p1"><span class="left">From:</span> <span class="price">103 000 $</span></p>
+					<a href="carpage.html"><img class="lazy" data-src="assets/images/3.png"></a>
 					<div class="colors">
 						<span class="white"></span>
 						<span class="orange"></span>
@@ -147,7 +159,7 @@
 			</li>
 			<li>
 					<p class="list-p"><span class="left">From:</span> <span class="price">61 000 $</span></p>
-					<a href="carpage.html"><img src="assets/images/4.png"></a>
+					<a href="carpage.html"><img class="lazy" data-src="assets/images/4.png"></a>
 					<div class="colors">
 						<span class="white"></span>
 						<span class="black"></span>
@@ -158,7 +170,7 @@
 					<p class="specs"> 302hp  200km/ph</p>
 			</li>
 			<li> 	<p class="list-p"><span class="left">From:</span> <span class="price">92 000 $</span></p>
-					<a href="carpage.html"><img src="assets/images/5.png"></a>
+					<a href="carpage.html"><img class="lazy" data-src="assets/images/5.png"></a>
 					<div class="colors">
 						<span class="white"></span>
 						<span class="black"></span>
@@ -172,7 +184,7 @@
 
 			<li>
 				<p class="list-p"><span class="left">From:</span> <span class="price">132 000 $</span></p>
-				<a href="carpage.html"> <img src="assets/images/6.png"></a>
+				<a href="carpage.html"> <img class="lazy" data-src="assets/images/6.png"></a>
 				<div class="colors">
 					<span class="white"></span>
 					<span class="black"></span>
@@ -188,8 +200,8 @@
 
 </section>
 <footer id="footer">
-	<img src="assets/images/logo-bl.png">
-	<a href="#!" class="nodmotors"> © nodmotors GE 2018</a>
+	<img class="academy-logo" src="assets/images/logo-bl.png">
+	<a href="#!" class="nodmotors"> ©nodmotors GE 2018</a>
 	<div class="Contacts">
 	<a href="#!" class="telnum"> (+995) 595 483 217</a>
 	<a href="#!" class="mail"> info@nodmotors.ge</a>

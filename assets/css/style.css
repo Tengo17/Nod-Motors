@@ -9,10 +9,8 @@
 body {
 	max-width: 1084px;
 	margin: 0 auto;
-	overflow-x: hidden;
-	height: 100%;
-	
-	
+	overflow-x: visible;
+	height: calc(130vh - 100px);
 }
 html {
 	scroll-behavior: smooth;
@@ -26,6 +24,7 @@ a,h1,h2,h3,p{
 	
 }
 header{
+	width: 1084px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -34,6 +33,9 @@ header{
 	z-index: 5;
 	
 
+}
+.burger-menu {
+	display: none;
 }
 
 .header-list {
@@ -53,6 +55,11 @@ header{
 
 }
 
+nav	{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
 .info-list-book {
 		background-image: linear-gradient(to bottom, #6ab04c, #badc58);
 	color: #FFF;
@@ -77,46 +84,41 @@ header{
 	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
 	color: #FFF;
 }
-
-
-
-.hero {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 680px;
-
-	
-}
 .hero-image {
-	display: flex;
 	position: relative;
-	left: 170px;
+	left: 180px;
+	bottom: 60px;
+}
 
-
-
-
-	}
 .tesla-h1 {
-	position: relative;
-	top: 100px;
-	left: 100px;
-	font-size: 30px;
+font-size: 30px;
+ color: black;
+ position: relative;
+ top: 100px;
+ left: 95px;
+
 
 }
-.tesla-p{
-	position: relative;
-	top: 70px;
-	left: 102px;
-	font-size: 14px;
-	color: #FFF;
+.tesla-p {
+font-size: 14px;
+color: #fff;
+position: relative;
+top: 70px;
+left: 100px;
 }
+
+
+
+}
+
+
+
 .hero-content {
 	height: calc(100vh - 60px);
    width: 100%;
    display: block;
    align-items: center;
-justify-content: center; 
+justify-content: space-between; 
 }
 
 .hero::before {
@@ -156,6 +158,7 @@ justify-content: center;
 	font-family: caps;
 	position: relative;
 	left:70px;
+	bottom: 75px;
 	justify-content: space-between;
 
 }
@@ -173,7 +176,7 @@ justify-content: center;
 
 .arrowdown {
 	position: relative;
-	bottom: 15px;
+	bottom: 18px;
 	right: 50px;
 	cursor: pointer;
 	padding-left: 50px;
@@ -229,12 +232,17 @@ form {
 }
 
 .selector:hover {
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	transition: 0.5s;
 	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
 	color: #181818;
-	transition: color 300ms ease;
+	transition:0.5s;
 }
 
 .amount {
+
+	transition: 0.5s;
 	position: relative;
 	right: -350px;
 	width: 72px;
@@ -257,9 +265,12 @@ form {
 }
 
 .amount:hover {
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	transition: 0.5s;
   	background-image: linear-gradient(to bottom, #6ab04c, #badc58);
 	color: #181818;
-	transition: color 300ms ease;
+	
   	
 }
 .car-list {
@@ -368,31 +379,33 @@ color: #95A5A6;
 content: url('../images/Pointer.png');
 position: relative;
 z-index: 1;
-top: 285px;
-left: 80px;
+top: 230px;
+left: 90px;
 }
 
 .tesla-h1::before {
 	content: url('../images/Pointer.png');
 	z-index: 1;
 	position: relative;
-	top: 180px;
-	left: 545px;
+	top: 120px;
+	left: 560px;
 }
 .tesla-p::before {
 	content: url('../images/Pointer.png');
 	position: relative;
 	z-index: 1;
-	top: 175px;
-	left: 735px;
+	top: 110px;
+	left: 750px;
 }
 .tesla-p::after{
 	content: url('../images/InfoPadge.png');
 	z-index: 1;
 	position: absolute;
-	top: 280px;
-	left: 330px;
+	top: 225px;
+	left: 335px;
 }
+
+
 /*booking-form*/
 .name {
 	background-color: #E8F0F3;
@@ -477,7 +490,7 @@ padding-left: 80px;
 	flex-direction: column;
 	text-align: center;
 	position: absolute;
-left: 450px;
+left: 400px;
 bottom: 100px; 
 }
 
@@ -485,7 +498,7 @@ bottom: 100px;
 	display: flex;
 	position: absolute;
 	top: -100px;
-	left: 485px;
+	left: 435px;
 	align-content: center;
 	flex-direction: column;
 	justify-content: space-between;
@@ -511,3 +524,360 @@ bottom: 100px;
 	height: 52px;
 
 }
+/*burger*/
+
+
+@media only screen and (max-width: 600px) {
+
+	header {
+		width: 300px;
+	}
+	body {
+		width:100%;
+		overflow-x: hidden;
+	}
+	nav	{
+		display: none;
+	}
+	.hero {
+
+		height: calc(100vh - 80px);
+	}
+	.hero::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #e8f0f3;
+	z-index: -2;
+	height: 768px;
+	width: 450px;
+	}
+
+
+	.hero::after {
+	content:'nodmotors';
+	position: absolute;
+	top: 280px;
+	display:block;
+	width: 400px;
+    height: 302px;
+    z-index: -1;
+    font-size: 68px;
+    font-family: caps;
+    color: #FFF;
+    text-shadow: 0 3px 6px 
+     rgba(24, 24, 24, 0.06);
+    opacity: 0.3;
+
+}
+	.hero-image {
+		width: 450px;
+		height: 240px;
+		position: relative;
+	left: -15px;
+	top: 40px;
+
+	}
+	.tesla-h1 {
+		position: relative;
+		top: 100px;
+		left: 0px;
+	}
+	.tesla-p {
+		position: relative;
+		left: 20px;
+	}
+	.specifications {
+		width: 280px;
+		height: 33px;
+		display: flex;
+	position: relative;
+	left: 50px;
+	top: 50px;
+		display: flex;
+		justify-content: space-between;
+		
+
+	}
+	
+	.spec {
+		font-size: 10px;
+	}
+	.li-spec {
+		font-size: 18px;
+	}
+	.arrowdown {
+		position: relative; 
+		top: 102px;
+	}
+.selectors{
+	position: relative;
+	left: 60px;
+	display: flex;
+	flex-direction: column;
+margin: 0 auto;
+
+}
+.selector {
+	margin-top: 15px;
+}
+.amount {
+	position: relative;
+	left: 0px;
+	width: 166px;
+	margin-top: 15px;
+}
+.car-list li {
+	overflow-x: hidden;
+}
+.car-list {
+	margin-left: 30px;
+}
+.list-p1 {
+	position: relative;
+	left: 65px;
+}
+footer {
+	position: relative;
+	bottom: 150px;
+	display: block;
+	width: 300px;
+	height: 300px;
+	
+}
+.academy-logo {
+	position: relative;
+	bottom: -250px;
+	left: 120px;
+
+}
+.cars-h1 {
+
+	display: flex;
+	margin-left: 110px;
+}
+.cars-p {
+	margin-left: 130px;
+}
+.nodmotors {
+	font-size: 12px;
+	width: 117px;
+	height: 14px;
+	position: relative;
+	bottom: -160px;
+	left: 10px;
+}
+.telnum {
+	font-size: 12px;
+	position: relative;
+	top: 80px;
+	left: 80px;
+}
+.mail {
+	font-size: 12px;
+	position: relative;
+	top: 79px;
+	left: 80px;
+
+}
+.hero::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #e8f0f3;
+	z-index: -2;
+	height: 600px;
+	}
+	.tesla-h1::after {
+content: url('../images/gallery/Pointer.png');
+position: relative;
+z-index: 1;
+top: 120px;
+left: 115px;
+}
+
+.tesla-h1::before {
+	content: url('../images/gallery/Pointer.png');
+	z-index: 1;
+	position: relative;
+	top: 115px;
+	left: 230px;
+}
+.tesla-p::before {
+	content: url('../images/gallery/Pointer.png');
+	position: relative;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+	top: 140px;
+	left: 85px;
+}
+.tesla-p::after{
+	content: url('../images/gallery/InfoPadge.png');
+	z-index: 1;
+	position: relative;
+	top: 170px;
+	left: -5px;
+}
+.specifications::before {
+	content: 'new technology wheels for winter';
+	font-size: 12px;
+	color: #95A5A6;
+	position: absolute;
+	bottom: 75px;
+	left: 50px;
+}
+
+
+/*burger*/
+#menuToggle {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuToggle input {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide input */
+  z-index: 1; /* top of the menu */
+}
+
+#menuToggle span{
+  width: 35px;
+  height: 4px;
+  margin: 3px;
+ 
+  background: #fff;
+  border-radius: 4px;
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+
+#span1 {
+  transform-origin: 4px 0px;
+}
+
+#span3 {
+  transform-origin: bottom right;
+}
+
+#menuToggle input:checked ~ #span1 {
+  background-color: #fff;
+  transform: rotate(45deg) translate(3px);
+}
+#menuToggle input:checked ~ #span2 {
+  background-color: #fff;
+  transform: rotate(495deg) translate(1px);   
+}
+#menuToggle input:checked ~ #span3 {
+  background-color: #fff;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.burger-menu {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  left: 80px;
+width: 44px;
+height: 42px;
+border-radius: 5px;
+background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+}
+
+
+
+
+.booking-content {
+position: fixed;
+bottom: 400px; 
+margin: 0 auto;
+z-index: 2;
+
+}
+.booking-content::before {
+	content: '';
+	position: absolute;
+	width:450px;
+	height: 180vh;
+	left: 0px;
+	top: -600px;
+	z-index: 0;
+	background-color: white;
+	opacity: 0.8;
+}
+
+
+.booking-p{
+	width: 280px;
+	height: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #95A5A6;
+	display: flex;
+	text-align: center;
+}
+.booking-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	position: absolute;
+left: 80px;
+bottom: 100px; 
+}
+
+.booking-input {
+	display: flex;
+	position: absolute;
+	top: -100px;
+	left: 115px;
+	align-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 2;
+
+}
+
+
+.booking-input.mystyle {
+	font-size: 16px;
+	margin-top: 150px;
+	margin-left: 25px;
+	width: 166px;
+	height: 57px;
+	display: flex;
+	text-align: center;
+}
+.image {
+	left: 115px;
+	top: 160px;
+	position: absolute;
+	width: 52px;
+	height: 52px;
+
+}
+}
+
+
