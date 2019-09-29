@@ -561,7 +561,7 @@ bottom: 100px;
 	}
 	body {
 		max-width:320px;
-		overflow-x: hidden;
+
 	}
 	nav	{
 		display: none;
@@ -878,7 +878,7 @@ left: 0;
 #myLinks::before {
 	content: '';
 	position: absolute;
-	width: 510px;
+	width: 400px;
 	height: 800px;
 	background-color: white;
 	z-index: -2;
@@ -919,6 +919,9 @@ bottom: -250px;
 	position: absolute;
 	bottom: 350px;
 	left: 220px;
+}
+.carpage {
+	width: 20px;
 }
 
 #nav-icon2 {
