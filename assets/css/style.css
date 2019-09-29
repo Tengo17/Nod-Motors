@@ -282,7 +282,7 @@ form {
   border: none;
   background-image: url("https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
  background-repeat: no-repeat;
- background-position: 100px;
+ background-position: 120px;
 }
 #dropdown1 { /*container for custom dropdown arrow*/
   -webkit-appearance: none;
@@ -305,6 +305,9 @@ form {
 	padding-bottom:100px;
 	position: relative;
 }
+.carlist3 {
+width: 348px;
+}
 .left {
 	color: #707070;
 }
@@ -315,6 +318,7 @@ form {
 .list-p {
 	display: flex;
 	justify-content: flex-end;
+margin-right: 60px;
 }
 .mobile-container {
 	display: none;
@@ -607,7 +611,7 @@ bottom: 100px;
 		width: 450px;
 		height: 240px;
 		position: relative;
-	left: -15px;
+	left: -55px;
 	top: 40px;
 
 	}
@@ -625,7 +629,7 @@ bottom: 100px;
 		height: 33px;
 		display: flex;
 	position: relative;
-	left: 50px;
+	left: 0;
 	top: 50px;
 		display: flex;
 		justify-content: space-between;
@@ -645,7 +649,7 @@ bottom: 100px;
 	}
 .selectors{
 	position: relative;
-	left: 60px;
+	left: 30px;
 	display: flex;
 	flex-direction: column;
 margin: 0 auto;
@@ -677,11 +681,7 @@ margin: 0 auto;
 	overflow-x: hidden;
 }
 .car-list {
-	margin-left: 30px;
-}
-.list-p1 {
-	position: relative;
-	left: 65px;
+	margin-left: 10px;
 }
 footer {
 	position: relative;
@@ -694,16 +694,16 @@ footer {
 .academy-logo {
 	position: relative;
 	bottom: -250px;
-	left: 120px;
+	left: 90px;
 
 }
 .cars-h1 {
 
 	display: flex;
-	margin-left: 110px;
+	margin-left: 80px;
 }
 .cars-p {
-	margin-left: 130px;
+	margin-left: 100px;
 }
 .nodmotors {
 	font-size: 12px;
@@ -711,19 +711,19 @@ footer {
 	height: 14px;
 	position: relative;
 	bottom: -160px;
-	left: 10px;
+	left: -20px;
 }
 .telnum {
 	font-size: 12px;
 	position: relative;
 	top: 80px;
-	left: 80px;
+	left: 50px;
 }
 .mail {
 	font-size: 12px;
 	position: relative;
 	top: 79px;
-	left: 80px;
+	left: 50px;
 
 }
 .hero::before {
@@ -743,7 +743,7 @@ content: url('../images/gallery/Pointer.png');
 position: relative;
 z-index: 1;
 top: 120px;
-left: 115px;
+left: 80px;
 }
 
 .tesla-h1::before {
@@ -751,7 +751,7 @@ left: 115px;
 	z-index: 1;
 	position: relative;
 	top: 115px;
-	left: 230px;
+	left: 190px;
 }
 .tesla-p::before {
 	content: url('../images/gallery/Pointer.png');
@@ -760,14 +760,14 @@ left: 115px;
 	height: 100px;
 	z-index: 1;
 	top: 140px;
-	left: 85px;
+	left: 45px;
 }
 .tesla-p::after{
 	content: url('../images/gallery/InfoPadge.png');
 	z-index: 1;
 	position: relative;
 	top: 170px;
-	left: -5px;
+	left: -45px;
 }
 .specifications::before {
 	content: 'new technology wheels for winter';
@@ -775,7 +775,7 @@ left: 115px;
 	color: #95A5A6;
 	position: absolute;
 	bottom: 75px;
-	left: 50px;
+	left: 30px;
 }
 
 
@@ -821,7 +821,7 @@ z-index: 5;
 	flex-direction: column;
 	text-align: center;
 	position: absolute;
-left: 50px;
+left: 0;
 
 
 
@@ -831,7 +831,7 @@ left: 50px;
 	display: flex;
 	position: absolute;
 	top: -90px;
-	left: 80px;
+	left: 30px;
 	align-content: center;
 	flex-direction: column;
 	justify-content: space-between;
@@ -864,7 +864,7 @@ left: 50px;
   position: relative;
   width: 400px;
   height: 200px;
-  right: 150px;
+  right: 190px;
   top: 0px;
  display: block;
  text-align: center;
@@ -922,11 +922,11 @@ bottom: -250px;
 }
 
 #nav-icon2 {
-
+z-index: 5;
   width: 60px;
-  height: 50px;
+  height: 20px;
   position: relative;
-  left: 120px;
+  left: 70px;
   margin: 50px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
