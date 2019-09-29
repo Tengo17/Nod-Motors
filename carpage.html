@@ -18,15 +18,28 @@
 	
  	
  	</nav>
- 	<div class="burger-menu" id="menu" onclick="onof()">
-<div id="menuToggle">
-    <input type="checkbox" />
-    <span id="span1"></span>
-    <span id="span2"></span>
-    <span id="span3"></span>
+ 	<div class="mobile-container">
+<div class="topnav" onclick="myFunction()" id="nav-icon2">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
 </div>
+
+
+
+  <div id="myLinks" style="display: none;">
+<a href="#cars"><li class="info-list">Cars</li></a>
+    <a href="termsandconditions.html"><li class="info-list" >Terms and Conditions</li></a>
+    <a href="contactpage.html"><li class="info-list">Contact</li></a>
+      <a href="#!"><button id="button" onclick="onof()" class="info-list-book">book</button></a>  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
- </ul>
 </header>
 	<!-- booking-form -->
 	<div id="booking" style="display: none;">
@@ -41,6 +54,7 @@
 			</div>
 
 			<form class="booking-input" id="input">
+				<a class="close" href="carpage.html">X</a>
 				<input type="text"  id="name" class="name" name="name" placeholder="Name">
 				<input type="text"  id="phone" class="phone" name="Phone" placeholder="Phone">
 				<input type="email" id="email" class="email" name="name" placeholder="Email">
@@ -169,6 +183,7 @@ Safety is the most important part of the overall Model 3 design. The metal struc
 </div>
 
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

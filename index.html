@@ -10,7 +10,7 @@
 <header>
 		 <a href="index.html"> <img class="logo" src="assets/images/Logo.png"></a>
 	<nav id="menu">
-	<ul class="header-list">
+	<ul id="header-list" class="header-list">
 		<a href="#cars"><li class="info-list">Cars</li></a>
 		<a href="termsandconditions.html"><li class="info-list" >Terms and Conditions</li></a>
 		<a href="contactpage.html"><li class="info-list">Contact</li></a>
@@ -18,14 +18,33 @@
 	</ul>
  	</nav>
 
- 	<div class="burger-menu" onclick="onof()" id="menu" >
-<div id="menuToggle">
-    <input type="checkbox"/>
-    <span id="span1"></span>
-    <span id="span2"></span>
-    <span id="span3"></span>
+<div class="mobile-container">
+<div class="topnav" onclick="myFunction()" id="nav-icon2">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
 </div>
+
+
+
+  <div id="myLinks" style="display: none;">
+
+<a href="#cars"><li class="info-list">Cars</li></a>
+    <a href="termsandconditions.html"><li class="info-list" >Terms and Conditions</li></a>
+    <a href="contactpage.html"><li class="info-list">Contact</li></a>
+      <a href="#!"><button id="button" onclick="onof()" class="info-list-book">book</button></a>  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+
+
+
+
 
  
 
@@ -64,10 +83,7 @@
 	</div>
 		<!-- booking-form -->
 	<div id="booking" style="display: none;">
-
-
 		<div class="booking-content" id="content" >
-				
 				<div class="booking-form">
 				<h1 id="booking-h1">Booking Form</h1>
 				<p class="booking-p">Includes Michelin Pilot Sport 4S tires, larger, more powerful brakes and lowered</p>
@@ -75,7 +91,7 @@
 			</div>
 
 			<form class="booking-input" id="input">
-			
+				<a class="close" href="index.html">X</a>
 				<input type="text"  id="name" class="name" name="name" placeholder="Name">
 				<input type="text"  id="phone" class="phone" name="Phone" placeholder="Phone">
 				<input type="email" id="email" class="email" name="name" placeholder="Email">
@@ -95,20 +111,20 @@
 
 	
 			<div class="selectors">
-				<select class="selector">
+				<select id="dropdown" class="selector">
 				<option>Tesla</option>
 				<option>Merseces-Benz</option>
 				<option>BMW</option>
 				<option>Hyundai</option>
 			</select>
 
-			<select class="selector"> 
+			<select id="dropdown" class="selector"> 
 				<option>Model 3</option>
 				<option>Model S</option>
 				<option>Model 3Z</option>
 			</select>
 
-			<select class="selector">
+			<select id="dropdown" class="selector">
 				<option>2018</option>
 				<option>2017</option>
 				<option>2016</option>
@@ -117,7 +133,7 @@
 			</select>
 			
 	
-			<select class="amount">
+			<select id="dropdown1" class="amount">
 				<option>20</option>
 				<option>10</option>
 			</select>
@@ -208,6 +224,7 @@
 </div>
 
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
