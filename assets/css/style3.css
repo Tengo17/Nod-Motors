@@ -139,12 +139,11 @@ height: 20px;
 	left: 40px;
 	}
 	iframe {
-		margin-left: 10px;
 		position: absolute;
 		width: 820px;
 		height: 585px;
-		left: 570px;
-		bottom: 135px;
+		left: 280px;
+		bottom: 35px;
 		border-radius: 15px;
 		z-index: 0;
 	}
