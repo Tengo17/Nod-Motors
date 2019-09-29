@@ -554,13 +554,13 @@ bottom: 100px;
 
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 680px) {
 
 	header {
 		width: 300px;
 	}
 	body {
-		width:100%;
+		max-width:320px;
 		overflow-x: hidden;
 	}
 	nav	{
@@ -584,7 +584,7 @@ bottom: 100px;
 	background-color: #e8f0f3;
 	z-index: -2;
 	height: 768px;
-	width: 320px;
+	width: 410px;
 	}
 	.mobile-container {
 	display: block;
@@ -596,7 +596,7 @@ bottom: 100px;
 	position: absolute;
 	top: 280px;
 	display:block;
-	width: 320px;
+	width: 400px;
     height: 302px;
     z-index: -1;
     font-size: 68px;
@@ -694,7 +694,7 @@ footer {
 .academy-logo {
 	position: relative;
 	bottom: -250px;
-	left: 90px;
+	left: 110px;
 
 }
 .cars-h1 {
@@ -711,19 +711,19 @@ footer {
 	height: 14px;
 	position: relative;
 	bottom: -160px;
-	left: -20px;
+	left: -10px;
 }
 .telnum {
 	font-size: 12px;
 	position: relative;
 	top: 80px;
-	left: 50px;
+	left: 60px;
 }
 .mail {
 	font-size: 12px;
 	position: relative;
-	top: 79px;
-	left: 50px;
+	top: 78px;
+	left: 60px;
 
 }
 .hero::before {
