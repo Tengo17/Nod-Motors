@@ -332,13 +332,13 @@ iframe {
 	width: 320px;
 	height: 330px;
 	position: relative;
-top: 0;
-left: -10px;
+top: 20px;
+left: 0px;
 
 }
 footer{
 position: relative;
-top: 0px;
+top: 340px;
 left: 0;
 width: 320px;
 height: 250px;
